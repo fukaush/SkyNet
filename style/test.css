@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #efeff4;
+  font-family: Arial;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+#test {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.tariffs {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+}
+
+.tariff {
+  background: #ffffff;
+  border: 1px #c8c7cc solid;
+  padding: 15px 0 15px 15px;
+  min-width: 320px;
+}
+.tariff__title {
+  border-bottom: 1px #dad9dc solid;
+  color: #8fc742;
+  font-weight: bold;
+  padding: 0 0 12px;
+  margin: 0 0 7px;
+}
+.tariff .middle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.tariff .middle .arrow {
+  margin: 0 10px 0 auto;
+  width: 12px;
+}
+.tariff__free-options {
+  color: #566066;
+  height: 60px;
+}
+.tariff__speed {
+  background: #70603e;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 15px;
+  margin: 0 0 0 -15px;
+}
+.tariff__speed.brown {
+  background: #70603e;
+}
+.tariff__speed.blue {
+  background: #0075d9;
+}
+.tariff__speed.orange {
+  background: #e74807;
+}
+.tariff__price-range {
+  color: #566066;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.tariff__free-options {
+  color: #566066;
+  margin: 10px 0px;
+}
+.tariff__link {
+  border-top: 1px #dad9dc solid;
+  padding: 15px 0 0;
+}
+.tariff__link a {
+  color: #0079ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.tariff__note {
+  color: #adadad;
+  margin: 10px 0 15px;
+  padding: 0 0 10px;
+  border-bottom: 1px #dad9dc solid;
+}
+.tariff__button {
+  background: #8fc742;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 15px 0 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-panel {
+  background: #f6f6f9;
+  border-bottom: 1px #cecece solid;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+}
+.top-panel .arrow {
+  cursor: pointer;
+  transform: rotate(180deg);
+  height: 18px;
+  position: absolute;
+  left: 15px;
+}
+
+@media (max-width: 1023px) {
+  .tariffs {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 640px) {
+  .tariffs {
+    grid-template-columns: auto;
+  }
+  .tariffs .tariff__free-options {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=test.css.map */
